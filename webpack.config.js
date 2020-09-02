@@ -5,10 +5,11 @@ const webpack = require("webpack");
 const { NamedModulesPlugin, HotModuleReplacementPlugin } = webpack;
 
 module.exports = {
+    // mode: "production",
     entry: {
         app: "./src/index.js",
     },
-    devtool: "source-map",
+    devtool: 'eval-source-map',
     devServer: {
         contentBase: "./dist",
         port: "8081",
