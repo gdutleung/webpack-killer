@@ -1,0 +1,64 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn build
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  14.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/zhenai/Documents/webpack-killer/package.json: Unexpected token } in JSON at position 361
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "webpack-killer",
+    "version": "1.0.0",
+    "description": "A new repository for study webpack deeply.",
+    "private": true,
+    "scripts": {
+      "build": "webpack --config webpack.prod.js",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch": "webpack --watch",
+      "start": "npx webpack-dev-server --open --config webpack.dev.js",
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/gdutleung/webpack-killer.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/gdutleung/webpack-killer/issues"
+    },
+    "homepage": "https://github.com/gdutleung/webpack-killer#readme",
+    "devDependencies": {
+      "clean-webpack-plugin": "^3.0.0",
+      "html-webpack-plugin": "^4.4.1",
+      "uglifyjs-webpack-plugin": "^2.2.0",
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0",
+      "webpack-merge": "^5.1.3"
+    },
+    "dependencies": {
+      "lodash": "^4.17.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
