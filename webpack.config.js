@@ -7,6 +7,12 @@ module.exports = {
         app: "./src/index.js",
         print: "./src/print.js",
     },
+    devtool: 'source-map',
+    devServer: {
+      contentBase: './dist',
+      port: '8081',
+      host: '0.0.0.0'
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
